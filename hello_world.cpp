@@ -1,11 +1,13 @@
 ﻿#include <iostream>
 #include <string>
-using namespace std;
 
 int main() {
-    string name;
-    cout << "Enter your name: ";
-    cin >> name;
-    cout << "Hello world from @" << name << endl;
+    // Запрос имени пользователя у оператора
+    std::string name;
+    std::cout << "Enter your name: ";
+    std::cin >> name; // Считывание введенного имени
+
+    // Вывод персонализированного приветствия в консоль
+    std::cout << "Hello world from @" << name << std::endl;
     return 0;
 }
